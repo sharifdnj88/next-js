@@ -1,0 +1,27 @@
+.menu{
+    ul{
+        display: flex;
+        gap: 10px;
+
+        li{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                background-color: orange;
+                padding: 3px 5px;
+                border-radius: 3px;
+                color: #FFF;
+               
+
+                &:hover{
+                    border-color: orange;
+                    border: 2px solid orange;
+                    background-color: #fff;
+                    color: #000;
+                    transition: 0.5s all;
+                }
+            }
+        }
+    }
+}

@@ -18,11 +18,11 @@ const userSchema = mongoose.Schema({
     },
     photo: {
         type: String,
+        default: null
     },
     gender: {
         type: String,
         enum: ["Male", "Female"],
-        default: "Male"
     },
     status: {
         type: Boolean,
@@ -39,4 +39,4 @@ const userSchema = mongoose.Schema({
 
 
 // export Schema
-export default mongoose.model("User", userSchema);
+export default mongoose.models.User || mongoose.model("User", userSchema);
